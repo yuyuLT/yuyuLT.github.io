@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>テスト用HTML</title>
+    <title>Portfolio | Backend Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-    <h1>テスト用B</h1>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-down" data-aos-duration="1000">@yuyuLT</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">Backend Engineer</p>
+            <div class="divider" data-aos="zoom-in" data-aos-delay="400"></div>
+            <p class="intro" data-aos="fade-up" data-aos-delay="600">
+                PHPを中心に、WordPress開発とバックエンド実装を行ってきました。<br>
+                業務ではデータ取得・整形・表示のための実装や、DBを意識した設計・改善にも取り組んでいます。
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills">
+        <div class="container">
+            <h2 data-aos="fade-right">Skills</h2>
+            <ul class="skill-list">
+                <li data-aos="fade-up" data-aos-delay="100">PHP / WordPress（テーマ・機能開発、Gutenberg運用）</li>
+                <li data-aos="fade-up" data-aos-delay="150">PHP / Laravel（業務システム開発）</li>
+                <li data-aos="fade-up" data-aos-delay="200">SQL（MySQL / PostgreSQL）・クエリ設計 / パフォーマンス改善</li>
+                <li data-aos="fade-up" data-aos-delay="250">HTML / CSS / JavaScript（業務でのフロントエンド実装）</li>
+                <li data-aos="fade-up" data-aos-delay="300">TypeScript / React（業務での利用経験）</li>
+                <li data-aos="fade-up" data-aos-delay="350">Go（個人開発・検証用途で利用）</li>
+                <li data-aos="fade-up" data-aos-delay="400">AWS（必要に応じた利用・検証）</li>
+                <li data-aos="fade-up" data-aos-delay="450">Docker / Git（開発環境整備、チーム開発）</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+        <div class="container">
+            <h2 data-aos="fade-right">Projects</h2>
+            <div class="project-grid">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Large Dataset Search API (Demo)</h3>
+                    <p class="summary">中間DBを前提にした検索API（Laravel + PostgreSQL）</p>
+                    <p class="highlight">検索条件の組み立て・安定したソート/ページングを意識して実装</p>
+                    <div class="tech-tags">
+                        <span>Laravel</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                    </div>
+                    <a href="https://github.com/yourname/large-dataset-search-api" class="repo-link" target="_blank"
+                        rel="noopener">Repository →</a>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>WordPress Custom Development</h3>
+                    <p class="summary">WordPressサイトの機能開発・運用改善</p>
+                    <p class="highlight">要件に合わせたテンプレート/表示制御、実装と運用の改善</p>
+                    <div class="tech-tags">
+                        <span>WordPress</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="https://github.com/yourname/wp-custom-dev" class="repo-link" target="_blank"
+                        rel="noopener">Repository →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2026 yuyuLT</p>
+    </footer>
+
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
 </body>
+
 </html>
